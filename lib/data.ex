@@ -27,7 +27,7 @@ defmodule Data do
   def first(nil) do
     nil
   end
-  def first(self) when is_list(self) do
+  def first(self) do
     Enum.at self, 0
   end
   @spec seq(Data.Sequence.t | Data.Sequenceable.t | Data.Listable.t) :: Data.Sequence.t
