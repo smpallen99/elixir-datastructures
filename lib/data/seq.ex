@@ -572,6 +572,6 @@ defmodule Data.Seq do
     { reverse(list1), reverse(list2) }
   end
 
-  def split(seq, count) when count < 0 do
+  def split(_seq, count) when count < 0 do
   end
 end
